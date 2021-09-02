@@ -3,9 +3,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <div className="main-header">
+        <header>
+          <img src="https://regularlyscheduledprogrammingblog.files.wordpress.com/2018/01/wikipedia-logo2.png" alt="Wikipedia logo" />
+        </header>
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,8 +19,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+      </div>
     </div>
   );
 }
