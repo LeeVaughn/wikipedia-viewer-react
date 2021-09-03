@@ -8,6 +8,7 @@ import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import SurpriseMe from './components/SurpriseMe';
 import ResultsContainer from './components/ResultsContainer';
+import NotFound from './components/NotFound';
 import './App.css';
 
 class App extends Component {
@@ -16,15 +17,18 @@ class App extends Component {
       <div className="container">
         <BrowserRouter>
           <Header />
-            <Route component={SearchForm} />
-            <SurpriseMe />
-    
+          <Route component={ SearchForm } />
 
+          <Switch>
+            <Route exact path="/" render={ () => <SurpriseMe /> } />
+            <Route path="/search/:category" render={ () => <ResultsContainer /> } />
+            <Route component={ NotFound } />
+          </Switch>
+    
         </BrowserRouter>
       </div>
     );
   }
-
 }
 
 export default App;
