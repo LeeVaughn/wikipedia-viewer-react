@@ -14,10 +14,16 @@ class ResultsContainer extends Component {
   }
 
   performSearch(query) {
-    axios.get(`http://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&origin=*&format=json&callback=?`)
+    axios.get(`http://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&origin=*`)
     .then(response => {
-      console.log(response)
+      this.setState({
+        results: response.data,
+        loading: false
+      })
     })
+    .catch(error => {
+      console.log("Error fetching data", error)
+    });
   }
 
   render() {
