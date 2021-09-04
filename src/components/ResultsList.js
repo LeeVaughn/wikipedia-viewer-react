@@ -1,4 +1,4 @@
-// import NoResults from './NoResults';
+import NoResults from './NoResults';
 
 function ResultsList(props) {
   const searchResults = props.results;
@@ -15,7 +15,7 @@ function ResultsList(props) {
       )
     });
   } else {
-    results = <p>No results</p>
+    results = <NoResults/>
   }
 
   return (
