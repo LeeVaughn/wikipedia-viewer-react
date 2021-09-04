@@ -21,7 +21,7 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" render={ () => <SurpriseMe /> } />
-            <Route path="/search/:category" render={ ({ match }) => <ResultsContainer data={ match.params.category } title={ match.params.category } /> } />
+            <Route path="/search/:category" render={ ({ match }) => <ResultsContainer data={ match.params.category } /> } />
             <Route component={ NotFound } />
           </Switch>
     
