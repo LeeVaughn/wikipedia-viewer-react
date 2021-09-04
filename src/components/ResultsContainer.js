@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import ResultsList from './ResultsList';
 
 class ResultsContainer extends Component {
 
@@ -23,7 +24,9 @@ class ResultsContainer extends Component {
     return (
       <div className="output-section">
         <div id="output">
-          results
+          {
+            (this.state.loading) ? <p>Loading...</p> : <ResultsList data={ this.state.results } />
+          }
         </div>
       </div>
     )
