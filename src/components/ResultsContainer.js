@@ -18,7 +18,7 @@ class ResultsContainer extends Component {
   }
 
   performSearch(query) {
-    axios.get(`http://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&origin=*`)
+    axios.get(`https://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&origin=*`)
     .then(response => {
       this.setState({
         results: response.data[1],
