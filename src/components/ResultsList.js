@@ -8,7 +8,7 @@ function ResultsList(props) {
     results = searchResults.map(result => {
       return (
         <div className="output-results">
-          <a href={ `https://en.wikipedia.org/wiki/${ result }` } target="blank">
+          <a href={ `https://en.wikipedia.org/wiki/${ result }` } target="_blank" rel="noreferrer">
             <h2>{ result }</h2>
           </a>
         </div>
