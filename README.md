@@ -1,4 +1,37 @@
-# Getting Started with Create React App
+# Wikipedia Viewer
+
+A React application that allows you to search for and view specific Wikipedia entries or to choose to be surprised and view a randomly selected Wikipedia entry.
+
+## Motivation
+
+To grow and practice my React skills, I rebuilt a new and improved version of [a static HTML/CSS/JS site](https://github.com/LeeVaughn/wikipedia-viewer) that I originally built in 2018.
+
+## Features
+
+* Allows user to enter terms into the search bar and receive a list of up to ten Wikipedia entries that match their search
+* The user can also choose to press the "Surprise Me!" button and be taken to a random Wikipedia entry
+* Clicking a result or "Surprise Me!" button opens the Wiki entry in a new tab so that the user is not redirected away from the application
+* The application is deployed to Netlify for easy of use
+
+## API
+
+[Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
+
+## Built With
+
+* [Node.js](https://nodejs.org/en/)
+* [React](https://reactjs.org/)
+* [Create React App](https://github.com/facebook/create-react-app) See below for more info
+
+## Links
+* [Live Link](https://wikipedia-viewer-dlv.netlify.app/)
+* [Repository](https://github.com/LeeVaughn/wikipedia-viewer-react)
+
+## Author
+
+[Daniel Lee Vaughn](https://github.com/LeeVaughn)
+
+***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
