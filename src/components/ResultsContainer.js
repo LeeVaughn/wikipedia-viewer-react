@@ -13,8 +13,10 @@ class ResultsContainer extends Component {
     this.performSearch(this.props.data);
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps) {
+    if (prevProps.data !== this.props.data) {
       this.performSearch(this.props.data);
+    }
   }
 
   performSearch(query) {
